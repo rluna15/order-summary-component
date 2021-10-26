@@ -1,0 +1,36 @@
+@use "../globals/" as *;
+
+.text {
+  &-white {
+    color: $White;
+  }
+
+  &-pale-blue {
+    color: $Pale-blue;
+  }
+
+  &-bright-blue {
+    color: $Bright-blue;
+  }
+
+  &-very-pale-blue {
+    color: $Very-pale-blue;
+  }
+
+  &-desaturated-blue {
+    color: $Desaturated-blue;
+  }
+
+  &-dark-blue {
+    color: $Dark-blue;
+  }
+
+  &-bold {
+      font-weight: bold;
+  }
+}
+
+.text-center {
+    text-align: center;
+  }
+  

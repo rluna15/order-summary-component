@@ -1,0 +1,15 @@
+@use "globals" as g;
+@use "util" as u;
+
+main {
+  width: auto;
+  height: 100vh;
+  background-color: g.$Pale-blue;
+  background-image: url(../../../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+
+  @include u.breakpoint-down(small) {
+    background-image: url(../../../images/pattern-background-mobile.svg);
+  }
+}

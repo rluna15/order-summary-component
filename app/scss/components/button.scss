@@ -1,0 +1,33 @@
+@use '../globals/' as g;
+@use '../util/' as u;
+
+.btn {
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+
+    &-blue {
+        background-color: g.$Bright-blue;
+        font-weight: bold;
+        color: g.$White;
+        font-family: g.$Red-Hat;
+
+        &:hover{
+            background-color: lighten(g.$Bright-blue, 15%);
+        }
+    }
+
+    &-link {
+        color: g.$Desaturated-blue;
+        background: none;
+        font-weight: bold;
+        font-family: g.$Red-Hat;
+
+        &:hover{
+            color:  darken(g.$Desaturated-blue, 20%);
+        }
+    }
+    
+}

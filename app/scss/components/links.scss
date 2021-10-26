@@ -1,0 +1,13 @@
+@use '../globals/' as g;
+@use '../util/' as u;
+
+.link {
+    color: g.$Bright-blue;
+    text-decoration: underline;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: none;
+        color: lighten(g.$Bright-blue, 15%);
+    }
+}

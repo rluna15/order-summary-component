@@ -1,0 +1,27 @@
+@use "../util/" as u;
+@use "../globals/" as g;
+
+.card {
+  width: u.rem(450);
+  height: u.rem(700);
+  background-color: white;
+  border-radius: 25px;
+
+  &-body {
+    padding: u.rem(50);
+  }
+
+  img {
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+  }
+
+  @include u.breakpoint-down(small) {
+      width: u.rem(330);
+      height: u.rem(570);
+
+      .card-body {
+        padding: 30px;
+      }
+  }
+}

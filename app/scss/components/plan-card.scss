@@ -1,0 +1,33 @@
+@use "../globals/" as g;
+@use "../util/" as u;
+
+.plan {
+  background-color: g.$Very-pale-blue;
+  border-radius: 20px;
+  padding: 25px;
+
+  img {
+    width: auto;
+    height: auto;
+    padding-right: 15px;
+  }
+
+  p {
+    margin: 0px;
+  }
+
+  a {
+    margin-left: u.rem(80);
+  }
+
+  @include u.breakpoint-down(small) {
+    padding: 10px 5px;
+    border-radius: 10px;
+
+    a {
+      margin: 0px;
+      padding-left: 40px;
+    }
+
+  }
+}
