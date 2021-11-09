@@ -41,6 +41,7 @@ Users should be able to:
 
 
 ### What I learned
+Getting to know how to create classes as components as well as creating a structure for the html and sass to minimize the use of selectors as much as possible. Really enjoyed how Sass can have a kind of child like structure that I really liked using.
 
 ```html
 <button class="btn btn-blue">Process Payment</button>
